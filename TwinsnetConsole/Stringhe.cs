@@ -87,6 +87,30 @@ namespace TwinsnetConsole
             Console.WriteLine($"Iva = { imponibile * 0.22} ");
 
 
+            // string format
+            var format = String.Format("{0} {0:#.0} {0:00.000} {1:00.00} {0:c}", 3.14, 12.345);
+            Console.WriteLine(format);
+
+
+            // null
+            string? string7 = null;
+            bool isNull = String.IsNullOrEmpty(string7);
+            Console.WriteLine($"String.IsNullOrEmpty(string7) = {isNull}");
+
+
+            // StringBuild
+            StringBuilder builder = new StringBuilder();
+            Console.WriteLine("builder.Capacity = " + builder.Capacity);
+            builder.Append("Ciao ");
+            builder.Append("Paolo");
+            builder.AppendLine("!"); 
+            Console.WriteLine(builder.ToString()); // c'e' una riga vuota per l'AppendLine precedente
+            Console.WriteLine("builder.Capacity = " + builder.Capacity);
+            builder.AppendLine("123456789001234567890123456789001234567890");
+            Console.WriteLine("builder.Capacity = " + builder.Capacity);
+
+            builder.Clear();
+            Console.WriteLine("builder.Capacity = " + builder.Capacity);
 
         }
 
