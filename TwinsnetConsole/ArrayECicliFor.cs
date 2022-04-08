@@ -83,7 +83,7 @@ namespace TwinsnetConsole
                 Console.WriteLine($"`{elemento}`");
             }
 
-            Console.WriteLine("Ecco l'effetto di string.Split(...) con una stringa diversa");
+            Console.WriteLine("Ecco l'effetto di string.Split(...) con una stringa diversa.");
 
             string[] elementi2 = "ciao, hello, hola".Split(",");
             foreach (var elemento in elementi2)
