@@ -6,6 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <StartupObject>TwinsnetConsole.ArrayECicliFor</StartupObject>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Description></Description>
+    <Product>$(AssemblyName) - e78324fea5896847332374384593723</Product>
   </PropertyGroup>
 
 </Project>
