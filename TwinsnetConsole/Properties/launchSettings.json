@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TwinsnetConsole": {
+      "commandName": "Project",
+      "commandLineArgs": "-file pluto.txt -content hola"
+    }
+  }
+}

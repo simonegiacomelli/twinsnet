@@ -5,10 +5,20 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>TwinsnetConsole.FileEsempi</StartupObject>
+    <StartupObject>TwinsnetConsole.Email</StartupObject>
     <FileVersion>1.0.0.1</FileVersion>
     <Description></Description>
     <Product>$(AssemblyName) - e78324fea5896847332374384593723</Product>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>
