@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TAG1 attributo1="val1">
+	<TAG2></TAG2>
+	<TAG3/>
+	<!-- 
+	
+	DTD document type definition
+	definisce la struttura di un file xml
+	-->	
+</TAG1>
