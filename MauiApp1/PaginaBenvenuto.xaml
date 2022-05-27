@@ -7,5 +7,16 @@
         <Label Text="Welcome to .NET MAUI!"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
+        <Button 
+            Text="Apri PaginaCoponenti in nuova Window"
+            Clicked="BtnApriPaginaComponenti_Clicked"    
+            ></Button>
+        <Button 
+            Text="Apri PaginaLayout in nuova Window"
+            Clicked="BtnApriPaginaLayout_Clicked"    
+            ></Button>
+
+        <Label x:Name="LblWorkingDir"/>
+       
     </StackLayout>
 </ContentPage>

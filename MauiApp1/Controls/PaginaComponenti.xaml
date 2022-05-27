@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:MauiApp1.Controls"         
+             x:Class="MauiApp1.Controls.PaginaComponenti"             
+             Title="PaginaComponenti">
+    <ScrollView>
+        <HorizontalStackLayout>
+        <VerticalStackLayout x:Name="VLayout">
+
+            <Label Text="Pagina Componenti"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <controls:ComponentePicker></controls:ComponentePicker>
+            <controls:ComponentePicker></controls:ComponentePicker>
+            <controls:ComponentePicker></controls:ComponentePicker>
+
+            <Picker x:Name="MonkeyPicker"
+                SelectedIndexChanged="MonkeyPicker_SelectedIndexChanged"
+        Title="Select a monkey">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Baboon</x:String>
+                        <x:String>Capuchin Monkey</x:String>
+                        <x:String>Blue Monkey</x:String>
+                        <x:String>Squirrel Monkey</x:String>
+                        <x:String>Golden Lion Tamarin</x:String>
+                        <x:String>Howler Monkey</x:String>
+                        <x:String>Japanese Macaque</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label  Text="Nessuna selezione fatta"
+                x:Name="LblSelezionePicker"
+            ></Label>
+            
+        </VerticalStackLayout>
+            <VerticalStackLayout x:Name="MainLayout">
+                
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+    </ScrollView>
+</ContentPage>

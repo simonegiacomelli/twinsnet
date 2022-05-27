@@ -1,0 +1,7 @@
+﻿https://github.com/microsoft/WindowsAppSDK/issues/1762
+
+https://github.com/dotnet/maui/issues/5327
+
+https://github.com/dotnet/maui/issues/3166
+
+https://github.com/dotnet/maui/issues/6934

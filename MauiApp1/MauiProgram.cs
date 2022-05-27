@@ -7,6 +7,7 @@
         // Program -> App -> AppShell -> Tutto il resto (in questo caso e' MainPage)
         public static MauiApp CreateMauiApp()
         {
+            FixWorkingFolder();
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
@@ -17,6 +18,13 @@
                 });
 
             return builder.Build();
+        }
+
+        private static void FixWorkingFolder()
+        {
+            string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string dllDir = Path.GetDirectoryName(location);
+            Directory.SetCurrentDirectory(dllDir);
         }
     }
 }

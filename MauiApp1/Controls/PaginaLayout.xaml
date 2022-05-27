@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:MauiApp1.Controls"
+             x:Class="MauiApp1.Controls.PaginaLayout"
+             Title="PaginaLayout"             
+             >
+    <ScrollView>
+        <HorizontalStackLayout Spacing="10">
+            <VerticalStackLayout Spacing="10" Rotation="0">
+                <Button Text="btn1"></Button>
+                <Button Text="btn1"></Button>
+                <Button Text="btn1"></Button>
+                <Button Text="btn1"></Button>
+            </VerticalStackLayout>
+            <VerticalStackLayout Spacing="10">
+                <controls:ComponentePicker></controls:ComponentePicker>
+                <controls:ComponentePicker></controls:ComponentePicker>
+                <controls:ComponentePicker></controls:ComponentePicker>
+                <controls:ComponentePicker></controls:ComponentePicker>
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+    </ScrollView>
+</ContentPage>
